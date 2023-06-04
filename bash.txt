@@ -1,0 +1,54 @@
+hide
+make table employee fields  last, 		first, 			dep
+insert into employee values Blow, 		Joe, 			CS
+insert into employee values Johnson, 	"Jimmy", 		Chemistry
+insert into employee values Yang, 		Bo, 			CS
+insert into employee values "Jackson",	Billy, 			Math
+insert into employee values Johnson,	Billy, 			"Phys Ed"
+insert into employee values "Van Gogh",	"Jim Bob", 		"Phys Ed"
+select * from employee 
+make table student fields 	fname, 			lname, 		major, 				age
+insert into student values 	Flo, 			Yao, 		CS, 				20
+insert into student values 	"Flo", 			"Jackson", 	Math,	 			21
+insert into student values 	Calvin, 		Woo, 		Physics,			22
+insert into student values 	"Anna Grace", 	"Del Rio", 	CS,	 				22
+insert into student values 	"Chung Yin", 	Lee, 	CS,	 				    54
+show
+select * from student
+select * from employee 
+select * from student where lname = Jackson
+select * from student where lname = "Del Rio"
+select * from student where lname = "Does Not Exist"
+select * from student where lname > Yang
+select * from student where age > 50
+select * from student where age  > 53
+select * from student where age > 54
+select * from student where lname >= Yang
+select * from employee where last >= Jack
+select * from student where lname < Jackson
+select * from student where age  < 20
+select * from student where age  < 19
+select * from student where lname <= Smith
+select * from employee where last <= Peach
+select * from student where fname = "Flo" and lname = "Yao"
+select * from student where fname = Flo or lname = Jackson
+select * from student where fname = Flo or major = CS and age <= 23
+select * from student where age <30 and major=CS or major = Physics and lname = Jackson
+select * from student where lname = Yang or major = CS and age < 23 or lname = Jackson 
+leave
+Following cmd are not valid command!
+Make missing_table M fields ...
+Make table testing missing_fields ...
+Make table testing fields
+Make table testing fields t1, t2
+Insert missing_into student values ...
+Insert into does_not_exist values a b c
+Insert into testing missing_values a b c
+Insert into testing values a, b, extra
+Insert into testing values missing2
+SeLecT from testing
+SeLecT t1, missing_from testing
+SeLecT t1, from testing missing_where 
+SeLecT t1, from testing missing_where missing_condition
+SeLecT t1, does_not_exist from testing
+leave
